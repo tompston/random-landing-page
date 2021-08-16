@@ -120,10 +120,13 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 350px) {
   .footer_right_column {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 62px;
+  }
+  .fs-1 {
+    font-size: 40px;
   }
 }
