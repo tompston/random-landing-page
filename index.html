@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      defer
+    ></script>
+
+    <title>random-page</title>
+  </head>
+  <body>
+    <!--  -->
+    <div class="flex-center">
+      <div class="max-width-1 grid header my-24">
+        <div class="fs-5 fw-700 header_left">LOGO</div>
+        <div class="header_right grid gtc-1-1-1">
+          <div class="flex-center pointer">Navigation</div>
+          <div class="flex-center pointer">Navigation</div>
+          <div class="flex-center pointer">Navigation</div>
+        </div>
+        <div class="hidden header-hidden-burger">
+          <div class="flex-center">
+            <svg
+              width="30px"
+              height="30px"
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                width="352"
+                height="32"
+                x="80"
+                y="96"
+                fill="var(--ci-primary-color, currentColor)"
+                class="ci-primary"
+              />
+              <rect
+                width="352"
+                height="32"
+                x="80"
+                y="240"
+                fill="var(--ci-primary-color, currentColor)"
+                class="ci-primary"
+              />
+              <rect
+                width="352"
+                height="32"
+                x="80"
+                y="384"
+                fill="var(--ci-primary-color, currentColor)"
+                class="ci-primary"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
+    <!--  -->
+    <div class="flex-center min-h-500 main-bg">
+      <div class="max-width-1">
+        <div class="temp-bg-col-1 gap-10 pl-70 bord-rad-1 grid main">
+          <div class="grid gap-h-10 top_left">
+            <div class="text-col-1 fs-1 pt-100 pb-10 max-w-430 main_header">
+              <span class="pt-70 fw-500"
+                >A Random Text That Says Some Stuff</span
+              >
+            </div>
+            <div class="fs-8 text-col-1 max-w-470 mb-140 main_text">
+              <span class="text-center text-space-1 line-height-3 fw-400">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                dolorem sunt sit eos exercitationem animi</span
+              >
+            </div>
+          </div>
+          <div class="top_right flex-center">
+            <div class="bord-rad-3 both-100">
+              <img
+                src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=973&q=80"
+                alt=""
+                class="img-cover both-100 bord-rad-3 top_img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <div class="flex-center">
+      <div class="max-width-1">
+        <div class="grid gtc-auto-1 two mt-110 mb-50 gap-w-60 two-grid">
+          <div class="fs-3 fw-600 second_header">
+            Some More Random Text About Stuff
+          </div>
+          <div class="text-3 max-w-570">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Laboriosam, fugit. Alias molestiae possimus adipisci obcaecati
+            voluptates voluptatibus quibusdam et optio similique odit nostrum
+            sint maiores quaerat, accusantium quae accusamus assumenda!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  -->
+
+    <div class="flex-center">
+      <div class="max-width-1 my-40">
+        <hr class="hr-1" />
+        <div class="grid three my-80">
+          <div class="empty"></div>
+          <div
+            class="gtc-1-1-1 gap-w-10 grid three-parent"
+            x-data="{ info: [
+            { label: 'Some Text' , value:'8.49%' },
+            { label: 'Some Text' , value:'8.49%' },
+            { label: 'Some Text' , value:'8.49%' },
+        ]}"
+          >
+            <template x-for="x in info">
+              <div class="three_child grid grid-center">
+                <div x-text="x.value" class="fs-2 fw-600"></div>
+                <div x-text="x.label" class="fs-8 text-left"></div>
+              </div>
+            </template>
+          </div>
+          <div class="empty"></div>
+        </div>
+
+        <hr class="hr-1" />
+      </div>
+    </div>
+
+    <!--  -->
+    <div class="flex-center">
+      <div class="max-width-1">
+        <div class="products-header fs-4 mt-30">A Grid For Some Stuff</div>
+
+        <div
+          x-data="{ cards: [1, 2, 3, 4] }"
+          class="grid gap-20 gap-h-60 product-grid mt-30"
+        >
+          <template x-for="card in cards">
+            <div class="grid product-child">
+              <div
+                class="
+                  min-h-305
+                  product-child-top-image
+                  bord-rad-3
+                  temp-bg-col-5
+                  mb-14
+                "
+              ></div>
+              <div class="fs-5 fw-500 mb-2">Some Name</div>
+              <div class="fs-8 fw-400">A bit of text about something</div>
+            </div>
+          </template>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <div class="flex-center">
+      <div class="max-width-1 my-70">
+        <div class="flex-center">
+          <button
+            class="
+              btn-1
+              flex-center
+              bord-rad-2
+              border-2
+              shadow-1
+              button-main
+              disable-text-select
+            "
+          >
+            VIEW ALL
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--  -->
+    <div class="flex-center mt-50 mb-120">
+      <div class="max-width-1">
+        <div
+          x-data="{ cards: [
+          { header: 'Random Header 1' , body:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi error impedit sapiente sunt architecto pariatur' , image_link: ''},
+          { header: 'Random Header 2' , body:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi error impedit sapiente sunt architecto pariatur' , image_link: ''},
+          { header: 'Random Header 3' , body:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi error impedit sapiente sunt architecto pariatur' , image_link: ''},
+      ]}"
+          class="grid gap-50 five"
+        >
+          <template x-for="card in cards">
+            <div class="temp-bg-col- grid">
+              <div class="five_top bord-rad-1 min-h-100 max-w-100 border-3">
+                <div class="both-100 flex-center op-50">IMG</div>
+                <!-- <img
+                  src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=973&q=80"
+                  alt=""
+                  class="img-cover both-100 bord-rad-3"
+                /> -->
+              </div>
+              <div class="fs-4 fw-600 mt-12" x-text="card.header"></div>
+              <div class="text-3 max-w-285" x-text="card.body">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
+                error impedit sapiente sunt architecto pariatur
+              </div>
+            </div>
+          </template>
+        </div>
+      </div>
+    </div>
+
+    <!--  -->
+    <div class="flex-center temp-bg-col-5">
+      <div class="max-width-1">
+        <div class="grid four">
+          <div class="my-22 border-3 bord-rad-3 max-h-490 four_left">
+            <img
+              src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=973&q=80"
+              alt=""
+              class="img-cover both-100 bord-rad-3"
+            />
+          </div>
+          <div class="py-125 four_right">
+            <div class="fs-3 max-w-350 four_header pb-20 fw-600">
+              Some More Random Text About Stuff
+            </div>
+            <div class="four_btn">
+              <button
+                class="
+                  btn-1
+                  flex-center
+                  bord-rad-2
+                  border-4
+                  disable-text-select
+                  button-main
+                "
+              >
+                BUTTON
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex-center temp-bg-col-2 text-col-1">
+      <div class="max-width-1">
+        <div class="grid newsletter_box py-60 gap-20">
+          <div class="newsl_left fs-4 max-w-440 fw-600">
+            Join our newsletter for updates and promotions!
+          </div>
+          <div class="newsl_right">
+            <input
+              class="shadow-1 mr-16 newsl_input"
+              type="text"
+              placeholder="Email"
+            />
+            <button
+              class="
+                button-main
+                btn-1
+                bord-rad-2
+                border-5
+                shadow-1
+                disable-text-select
+                submit-btn
+              "
+            >
+              SUBMIT
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="hr-3" />
+
+    <div class="flex-center my-40">
+      <div class="max-width-1">
+        <div class="grid pb-72 footer">
+          <div class="footer_left">
+            <div class="footer_left_logo fw-700 fs-5 mb-6">COMPANY NAME</div>
+            <div class="footer_left_text max-w-400 op-60 mt-14">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum, iusto itaque. Iste, exercitationem suscipit quis
+            </div>
+          </div>
+          <div class="grid footer_right">
+            <div class="grid footer_right_column">
+              <!--  -->
+              <div class="footer_right_child">
+                <div class="footer_right_grid_title fw-700 fs-5">About</div>
+                <div class="grid footer_right_links gap-14 mt-14 op-60">
+                  <div class="footer_right_grid_link">Company</div>
+                  <div class="footer_right_grid_link">Profile</div>
+                  <div class="footer_right_grid_link">Career</div>
+                </div>
+              </div>
+
+              <!--  -->
+              <div class="footer_right_child">
+                <div class="footer_right_grid_title fw-700 fs-5">Other</div>
+                <div class="grid footer_right_links gap-14 mt-14 op-60">
+                  <div class="footer_right_grid_link">Company</div>
+                  <div class="footer_right_grid_link">Profile</div>
+                  <div class="footer_right_grid_link">Career</div>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+    <script>
+      (function (a, b, c) {
+        var d = a.history,
+          e = document,
+          f = navigator || {},
+          g = localStorage,
+          h = encodeURIComponent,
+          i = d.pushState,
+          k = function () {
+            return Math.random().toString(36);
+          },
+          l = function () {
+            return g.cid || (g.cid = k()), g.cid;
+          },
+          m = function (r) {
+            var s = [];
+            for (var t in r)
+              r.hasOwnProperty(t) &&
+                void 0 !== r[t] &&
+                s.push(h(t) + "=" + h(r[t]));
+            return s.join("&");
+          },
+          n = function (r, s, t, u, v, w, x) {
+            var z = "https://www.google-analytics.com/collect",
+              A = m({
+                v: "1",
+                ds: "web",
+                aip: c.anonymizeIp ? 1 : void 0,
+                tid: b,
+                cid: l(),
+                t: r || "pageview",
+                sd:
+                  c.colorDepth && screen.colorDepth
+                    ? screen.colorDepth + "-bits"
+                    : void 0,
+                dr: e.referrer || void 0,
+                dt: e.title,
+                dl: e.location.origin + e.location.pathname + e.location.search,
+                ul: c.language ? (f.language || "").toLowerCase() : void 0,
+                de: c.characterSet ? e.characterSet : void 0,
+                sr: c.screenSize
+                  ? (a.screen || {}).width + "x" + (a.screen || {}).height
+                  : void 0,
+                vp:
+                  c.screenSize && a.visualViewport
+                    ? (a.visualViewport || {}).width +
+                      "x" +
+                      (a.visualViewport || {}).height
+                    : void 0,
+                ec: s || void 0,
+                ea: t || void 0,
+                el: u || void 0,
+                ev: v || void 0,
+                exd: w || void 0,
+                exf: "undefined" != typeof x && !1 == !!x ? 0 : void 0,
+              });
+            if (f.sendBeacon) f.sendBeacon(z, A);
+            else {
+              var y = new XMLHttpRequest();
+              y.open("POST", z, !0), y.send(A);
+            }
+          };
+        (d.pushState = function (r) {
+          return (
+            "function" == typeof d.onpushstate && d.onpushstate({ state: r }),
+            setTimeout(n, c.delay || 10),
+            i.apply(d, arguments)
+          );
+        }),
+          n(),
+          (a.ma = {
+            trackEvent: function o(r, s, t, u) {
+              return n("event", r, s, t, u);
+            },
+            trackException: function q(r, s) {
+              return n("exception", null, null, null, null, r, s);
+            },
+          });
+      })(window, "UA-199825736-2", {
+        anonymizeIp: true,
+        colorDepth: true,
+        characterSet: true,
+        screenSize: true,
+        language: true,
+      });
+    </script>
+  </body>
+</html>
+
+<!-- 
+  <div class="flex-center">
+  <div class="max-width-1">content</div>
+</div> 
+-->

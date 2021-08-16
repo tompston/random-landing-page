@@ -1,0 +1,88 @@
+.shadow-1 {
+  box-shadow: 0 1.4px 9.8px -4px rgba(0, 0, 0, 0.071),
+    0 11px 78px -4px rgba(0, 0, 0, 0.07);
+}
+
+.header {
+  grid-template-columns: 630px auto;
+}
+
+.main {
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.main_left {
+  grid-template-rows: auto auto auto;
+}
+
+.three {
+  grid-template-columns: 0.2fr 1fr 0.2fr;
+}
+
+.button-main {
+  min-width: 110px;
+  min-height: 42px;
+  margin-right: 26px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.product-grid {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.four {
+  grid-template-columns: 0.8fr 1fr;
+  gap: 50px;
+}
+
+.footer {
+  grid-template-columns: 1fr 0.72fr;
+  gap: 40px;
+}
+
+.footer_right_column {
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer_right_grid_link {
+  cursor: pointer;
+}
+
+.newsl_input {
+  background: rgb(241, 241, 241);
+  border: 2px solid rgba(182, 181, 181, 0.6);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  width: 100%;
+  max-width: 280px;
+  border-radius: 6px;
+}
+
+.five {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.button-main {
+  transition: all 0.1s ease-in;
+}
+
+.button-main:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.submit-btn:hover {
+  background: rgb(86, 158, 114);
+  color: rgb(255, 255, 255);
+}
+
+.submit-btn:active {
+  background: rgb(2, 116, 46);
+  color: rgb(255, 255, 255);
+}
+
+.second_header {
+  max-width: 350px;
+}
