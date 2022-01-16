@@ -65,19 +65,17 @@
     <!--  -->
     <div class="flex-center min-h-500 main-bg">
       <div class="max-width-1">
-        <div class="temp-bg-col-1 gap-10 pl-70 bord-rad-1 grid main">
-          <div class="grid gap-h-10 top_left">
-            <div class="text-col-1 fs-1 pt-100 pb-10 max-w-430 main_header">
-              <span class="pt-70 fw-500"
-                >A Random Text That Says Some Stuff</span
-              >
+        <div class="temp-bg-col-1 gap-10 bord-rad-1 grid main">
+          <div class="main_left">
+            <div class="text-col-1 fs-1 pb-4 main_header mb-10">
+              <span class="fw-500">Random Text That Says Some Stuff</span>
             </div>
-            <div class="fs-8 text-col-1 max-w-470 mb-140 main_text">
+            <div class="fs-8 text-col-1 main_text">
               <span class="text-space-1 line-height-3 fw-400">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
                 dolorem sunt sit eos exercitationem animi</span
               >
-              <div class="text-space-1 line-height-3 fw-400 github_repo_link">
+              <div class="text-space-2 line-height-3 fw-400 github_repo_link">
                 <a
                   href="https://github.com/tompston/random-landing-page"
                   target="_blank"
@@ -86,6 +84,7 @@
               </div>
             </div>
           </div>
+
           <div class="top_right flex-center">
             <div class="bord-rad-3 both-100">
               <img
@@ -101,11 +100,11 @@
     <!--  -->
     <div class="flex-center">
       <div class="max-width-1">
-        <div class="grid gtc-auto-1 two mt-110 mb-50 gap-w-60 two-grid">
-          <div class="fs-3 fw-600 second_header">
+        <div class="grid gtc-auto-1 two mt-80 mb-50 gap-w-60 two-grid">
+          <div class="fs-3 fw-600 second_header align-vertically">
             Some More Random Text About Stuff
           </div>
-          <div class="text-3 max-w-570">
+          <div class="text-3 max-w-570- align-vertically">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Laboriosam, fugit. Alias molestiae possimus adipisci obcaecati
             voluptates voluptatibus quibusdam et optio similique odit nostrum
@@ -156,13 +155,7 @@
           <template x-for="card in cards">
             <div class="grid product-child">
               <div
-                class="
-                  min-h-305
-                  product-child-top-image
-                  bord-rad-3
-                  temp-bg-col-5
-                  mb-14
-                "
+                class="min-h-305 product-child-top-image bord-rad-3 temp-bg-col-5 mb-14"
               ></div>
               <div class="fs-5 fw-500 mb-2">Some Name</div>
               <div class="fs-8 fw-400">A bit of text about something</div>
@@ -176,15 +169,7 @@
       <div class="max-width-1 my-70">
         <div class="flex-center">
           <button
-            class="
-              btn-1
-              flex-center
-              bord-rad-2
-              border-2
-              shadow-1
-              button-main
-              disable-text-select
-            "
+            class="btn-1 flex-center bord-rad-2 border-2 shadow-1 button-main disable-text-select"
           >
             VIEW ALL
           </button>
@@ -228,31 +213,27 @@
     <div class="flex-center temp-bg-col-5">
       <div class="max-width-1">
         <div class="grid four">
-          <div class="my-22 border-3 bord-rad-3 max-h-490 four_left">
+          <div class="my-20 border-3 bord-rad-3 max-h-490 four_left">
             <img
               src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=973&q=80"
               alt=""
               class="img-cover both-100 bord-rad-3"
             />
           </div>
-          <div class="py-125 four_right">
-            <div class="fs-3 max-w-350 four_header pb-20 fw-600">
+          <div
+            class="py-125 flex-column align-vertically random_stuff_header_last"
+          >
+            <div class="fs-2 max-w-350- four_header pb-20 fw-600">
               Some More Random Text About Stuff
             </div>
-            <div class="four_btn">
+
+            <!-- <div class="four_btn">
               <button
-                class="
-                  btn-1
-                  flex-center
-                  bord-rad-2
-                  border-4
-                  disable-text-select
-                  button-main
-                "
+                class="btn-1 flex-center bord-rad-2 border-4 disable-text-select button-main"
               >
                 BUTTON
               </button>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -260,8 +241,8 @@
 
     <div class="flex-center temp-bg-col-2 text-col-1">
       <div class="max-width-1">
-        <div class="grid newsletter_box py-60 gap-20">
-          <div class="newsl_left fs-4 max-w-440 fw-600">
+        <div class="grid newsletter_box py-50 gap-0">
+          <div class="fs-4 max-w-490 fw-600 mb-20 newsl_left">
             Join our newsletter for updates and promotions!
           </div>
           <div class="newsl_right">
@@ -271,15 +252,7 @@
               placeholder="Email"
             />
             <button
-              class="
-                button-main
-                btn-1
-                bord-rad-2
-                border-5
-                shadow-1
-                disable-text-select
-                submit-btn
-              "
+              class="button-main btn-1 bord-rad-2 border-5 shadow-1 disable-text-select submit-btn"
             >
               SUBMIT
             </button>

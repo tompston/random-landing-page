@@ -11,8 +11,25 @@
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
+.main_header {
+  line-height: 1.08;
+}
+.fs-3 {
+  line-height: 1.1;
+}
+
 .main_left {
-  grid-template-rows: auto auto auto;
+  padding: 130px 40px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.align-vertically {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .three {
@@ -85,6 +102,11 @@
 
 .second_header {
   max-width: 350px;
+  line-height: 1.01;
+}
+
+.four_header {
+  line-height: 1.01;
 }
 
 .github_repo_link {

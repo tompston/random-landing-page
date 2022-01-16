@@ -3,7 +3,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "postbuild": "purgecss --css dist/assets/*.css --content dist/index.html -o dist/assets/  --safelist html body"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^4.0.3",
@@ -16,6 +17,7 @@
   },
   "dependencies": {
     "alpinejs": "^3.2.3",
-    "autoprefixer": "^10.3.1"
+    "autoprefixer": "^10.3.1",
+    "purgecss": "^4.1.3"
   }
 }
