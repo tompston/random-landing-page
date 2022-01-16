@@ -19,7 +19,8 @@
 
 @media screen and (max-width: 900px) {
   .main_header {
-    padding: 50px 0px;
+    padding-top: 110px;
+    /* padding: 50px 0px; */
   }
 
   .main {
@@ -164,9 +165,9 @@
 @media screen and (max-width: 600px) {
   :root {
     --fs-1: 34px;
-    --fs-2: 29px;
+    /* --fs-2: 29px; */
     --fs-3: 24px;
-    --fs-4: 22px;
+    /* --fs-4: 22px; */
     --fs-5: 20px;
     --fs-6: 20px;
     --fs-7: 18px;
