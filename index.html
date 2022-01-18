@@ -17,7 +17,7 @@
     <!--  -->
     <div class="flex-center">
       <div class="max-width-1 grid header my-24">
-        <div class="fs-5 fw-500 header_left ">LOGO</div>
+        <div class="fs-5 fw-500 header_left">LOGO</div>
         <div class="header_right grid gtc-1-1-1">
           <div class="flex-center pointer">Navigation</div>
           <div class="flex-center pointer">Navigation</div>
@@ -191,7 +191,11 @@
           <template x-for="card in cards">
             <div class="temp-bg-col- grid">
               <div class="five_top bord-rad-1 min-h-100 max-w-100 border-2">
-                <div class="both-100 flex-center op-50 disable-text-select both-100">IMG</div>
+                <div
+                  class="both-100 flex-center op-50 disable-text-select both-100"
+                >
+                  IMG
+                </div>
               </div>
               <div class="fs-4 fw-600 mt-12" x-text="card.header"></div>
               <div class="text-3 max-w-285" x-text="card.body">
@@ -237,7 +241,7 @@
     <div class="flex-center temp-bg-col-2 text-col-1">
       <div class="max-width-1">
         <div class="grid newsletter_box py-50 gap-0">
-          <div class="fs-4 fw-600 mb-10 newsl_left ">
+          <div class="fs-4 fw-600 mb-10 newsl_left">
             Join our newsletter for updates and promotions!
           </div>
           <div class="newsl_right">
@@ -297,92 +301,6 @@
     </div>
 
     <script type="module" src="/main.js"></script>
-    <script>
-      (function (a, b, c) {
-        var d = a.history,
-          e = document,
-          f = navigator || {},
-          g = localStorage,
-          h = encodeURIComponent,
-          i = d.pushState,
-          k = function () {
-            return Math.random().toString(36);
-          },
-          l = function () {
-            return g.cid || (g.cid = k()), g.cid;
-          },
-          m = function (r) {
-            var s = [];
-            for (var t in r)
-              r.hasOwnProperty(t) &&
-                void 0 !== r[t] &&
-                s.push(h(t) + "=" + h(r[t]));
-            return s.join("&");
-          },
-          n = function (r, s, t, u, v, w, x) {
-            var z = "https://www.google-analytics.com/collect",
-              A = m({
-                v: "1",
-                ds: "web",
-                aip: c.anonymizeIp ? 1 : void 0,
-                tid: b,
-                cid: l(),
-                t: r || "pageview",
-                sd:
-                  c.colorDepth && screen.colorDepth
-                    ? screen.colorDepth + "-bits"
-                    : void 0,
-                dr: e.referrer || void 0,
-                dt: e.title,
-                dl: e.location.origin + e.location.pathname + e.location.search,
-                ul: c.language ? (f.language || "").toLowerCase() : void 0,
-                de: c.characterSet ? e.characterSet : void 0,
-                sr: c.screenSize
-                  ? (a.screen || {}).width + "x" + (a.screen || {}).height
-                  : void 0,
-                vp:
-                  c.screenSize && a.visualViewport
-                    ? (a.visualViewport || {}).width +
-                      "x" +
-                      (a.visualViewport || {}).height
-                    : void 0,
-                ec: s || void 0,
-                ea: t || void 0,
-                el: u || void 0,
-                ev: v || void 0,
-                exd: w || void 0,
-                exf: "undefined" != typeof x && !1 == !!x ? 0 : void 0,
-              });
-            if (f.sendBeacon) f.sendBeacon(z, A);
-            else {
-              var y = new XMLHttpRequest();
-              y.open("POST", z, !0), y.send(A);
-            }
-          };
-        (d.pushState = function (r) {
-          return (
-            "function" == typeof d.onpushstate && d.onpushstate({ state: r }),
-            setTimeout(n, c.delay || 10),
-            i.apply(d, arguments)
-          );
-        }),
-          n(),
-          (a.ma = {
-            trackEvent: function o(r, s, t, u) {
-              return n("event", r, s, t, u);
-            },
-            trackException: function q(r, s) {
-              return n("exception", null, null, null, null, r, s);
-            },
-          });
-      })(window, "UA-199825736-2", {
-        anonymizeIp: true,
-        colorDepth: true,
-        characterSet: true,
-        screenSize: true,
-        language: true,
-      });
-    </script>
   </body>
 </html>
 
